@@ -1,0 +1,77 @@
+.navbar{
+  margin: 0 1.5rem;
+}
+
+.navbar-light span.navbar-brand{
+  color: var(--black);
+  font-weight: 700;
+  padding-top: 0;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.navbar-light span.navbar-brand:hover{
+  color: var(--black);
+}
+
+.navbar-light .navbar-nav a.nav-link{
+  font-size: 1.2rem;
+  color: var(--gray);
+  font-weight: 600;
+  padding-left: 2.5rem ;
+}
+.navbar-light .dropdown a.nav-link{
+  font-size: 1.2rem;
+  color: var(--gray);
+  font-weight: 600;
+  padding-left:2.5rem ;
+}
+
+.navbar-light .navbar-nav a.nav-link:hover{
+  color: var(--black);
+}
+.navbar-light .dropdown a.nav-link:hover{
+  color: var(--black);
+}
+
+.navbar-light .navbar-nav:last-child{
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-light .navbar-nav:last-child a.nav-link:last-of-type{
+  color: var(--gray);
+  padding: 0.5rem 1.5rem ;
+  border-radius: 12px;
+  border-color: var(--gray);
+}
+
+.navbar-light .navbar-nav:last-child a.nav-link:last-of-type:hover{
+  border-color: var(--black);
+  color: var(--black);
+  background-color: transparent;
+}
+
+.dropdown-menu.show .dropdown-item{
+  font-size: 1.2rem;
+  color: var(--gray);
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 767px) {
+  .navbar-light .navbar-nav:last-child{
+    align-items: flex-start;
+  }
+  .navbar-light .navbar-nav a.nav-link{
+    padding-left: 0;
+  }
+  .navbar-light .dropdown a.nav-link{
+    padding-left: 0;
+  }
+
+  .dropdown-menu.show {
+    position: relative;
+    margin-left: 2rem;
+  }
+}
