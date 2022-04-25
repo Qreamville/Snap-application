@@ -1,8 +1,11 @@
 import React from 'react'
+import { CareerHeader } from '../container'
 
 const Careers = () => {
   return (
-    <div>Careers</div>
+    <div>
+      <CareerHeader />
+    </div>
   )
 }
 

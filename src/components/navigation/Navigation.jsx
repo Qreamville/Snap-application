@@ -9,7 +9,7 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 
 const Navigation = () => {
   return (
-    <Navbar expand="md" >
+    <Navbar expand="md">
 
       <LinkContainer to='/'>
         <Navbar.Brand>Snap</Navbar.Brand>

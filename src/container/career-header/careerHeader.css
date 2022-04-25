@@ -1,0 +1,56 @@
+.careers__image{
+  background-image: url(../../asset/scott-graham-5fNmWej4tAA-unsplash.jpg);
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.careers__image img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.career__form{
+  background-color: var(--black);
+}
+
+.form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 20px 0;
+}
+
+.form p{
+  margin: 0;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+select{
+  padding: 1px 8px;
+  outline: none;
+}
+
+input{
+  outline: none;
+}
+
+.career__featured{
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.career__featured h2{
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width:767px) {
+  .form{
+    flex-direction: column;
+  }
+}
