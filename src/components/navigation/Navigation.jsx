@@ -1,5 +1,6 @@
 import React from 'react'
 import "./navigation.css"
+import { LinkContainer } from 'react-router-bootstrap'
 import iconTodo from '../../asset/icon-todo.svg'
 import iconCalender from '../../asset/icon-calendar.svg'
 import iconReminders from '../../asset/icon-reminders.svg'
@@ -9,7 +10,10 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 const Navigation = () => {
   return (
     <Navbar expand="md" >
-      <Navbar.Brand>Snap</Navbar.Brand>
+
+      <LinkContainer to='/'>
+        <Navbar.Brand>Snap</Navbar.Brand>
+      </LinkContainer>
       <Navbar.Toggle aria-controls="navbar-collapse-id" />
       <Navbar.Collapse id="navbar-collapse-id">
         <NavDropdown title="Features" id="nav-dropdown">
@@ -24,8 +28,13 @@ const Navigation = () => {
           <NavDropdown.Item eventKey="event-key">Blog</NavDropdown.Item>
         </NavDropdown>
         <Nav>
-          <Nav.Link href='#contact'>Careers</Nav.Link>
-          <Nav.Link href='#contact'>About</Nav.Link>
+          <LinkContainer to='/careers'>
+            <Nav.Link href='#contact'>Careers</Nav.Link>
+          </LinkContainer>
+
+          <LinkContainer to='/about'>
+            <Nav.Link href='#contact'>About</Nav.Link>
+          </LinkContainer>
         </Nav>
         <Nav className='ms-auto'>
           <Nav.Link >Login</Nav.Link>
