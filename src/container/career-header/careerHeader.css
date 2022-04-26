@@ -34,10 +34,14 @@
 select{
   padding: 1px 8px;
   outline: none;
+  width: 10rem;
+  height:2rem;
 }
 
 input{
   outline: none;
+  width: 10rem;
+  height:2rem;
 }
 
 .career__featured{
