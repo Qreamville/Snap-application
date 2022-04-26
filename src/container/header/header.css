@@ -47,6 +47,12 @@
   border-radius: 10px;
 }
 
+.header__text-btn button:hover{
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--black);
+}
+
 .header__brand{
   display: flex;
   align-items: center;
